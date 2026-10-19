@@ -41,16 +41,17 @@ gh auth switch --user saileshCBS  # back to the work account
 
 ## Where RSVPs go
 
-Google Sheet → tab **RSVPs**. Columns: Timestamp, Name, Email, Attending, Guests, Guess (Team Pink / Team Blue), Diet, Allergies, Note, User Agent.
+Google Sheet → tab **RSVPs**. Columns: Timestamp, Name, Email, Attending, Adults, Kids, Guess (Team Pink / Team Blue), Diet, Allergies, Note, User Agent.
 
 Handy formulas for a summary tab:
 
 ```
 Coming:        =COUNTIF(RSVPs!D:D,"Yes")
-Total guests:  =SUMIF(RSVPs!D:D,"Yes",RSVPs!E:E)
-Team Pink:     =COUNTIF(RSVPs!F:F,"Team Pink")
-Team Blue:     =COUNTIF(RSVPs!F:F,"Team Blue")
-Veg plates:    =SUMIFS(RSVPs!E:E,RSVPs!D:D,"Yes",RSVPs!G:G,"Veg")
+Adults:        =SUMIF(RSVPs!D:D,"Yes",RSVPs!E:E)
+Kids:          =SUMIF(RSVPs!D:D,"Yes",RSVPs!F:F)
+Team Pink:     =COUNTIF(RSVPs!G:G,"Team Pink")
+Team Blue:     =COUNTIF(RSVPs!G:G,"Team Blue")
+Veg (adults):  =SUMIFS(RSVPs!E:E,RSVPs!D:D,"Yes",RSVPs!H:H,"Veg")
 ```
 
 To get an email per RSVP, set `EMAIL_ON_RSVP = true` in the Apps Script and redeploy.
