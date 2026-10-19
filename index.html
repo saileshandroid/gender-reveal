@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Girl or Boy? · Sailesh &amp; Nithya's Gender Reveal · Nov 21, 2026</title>
+<meta name="description" content="Girl or Boy? We'll find out with you! Join Sailesh &amp; Nithya on Saturday, November 21, 2026 at 5:30 PM at Tesoro Clubhouse, Crescent Village, San Jose. RSVP here.">
+<meta name="theme-color" content="#0f1f3d">
+
+<!-- Link preview for WhatsApp / iMessage. PUBLISH STEP: replace YOUR-GITHUB-USERNAME in the two URLs below. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Girl or Boy? Sailesh &amp; Nithya's Gender Reveal">
+<meta property="og:description" content="Saturday, November 21, 2026 · 5:30 PM · Tesoro Clubhouse, Crescent Village. Tap to RSVP!">
+<meta property="og:image" content="https://saileshandroid.github.io/gender-reveal/preview.jpg">
+<meta property="og:url" content="https://saileshandroid.github.io/gender-reveal/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍼</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Caveat:wght@700&family=Great+Vibes&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#0f1f3d; --navy-2:#182a52; --navy-deep:#0a1630;
+  --gold:#f3d9a4; --gold-deep:#c9a64a; --gold-glow:#ffe9a8;
+  --pink:#e88fa7; --blue:#7fb3e0;
+  --mauve:#a05a7a; --maroon:#8b1e3f;
+  --sage:#9ba37b; --sage-dark:#78815c; --sage-light:#b1b996;
+  --cream:#fbf7ef; --ink:#2b2b2b; --muted:#6b6b6b;
+  --script:'Great Vibes',cursive;
+  --sans:'Montserrat',system-ui,-apple-system,sans-serif;
+  --round:'Baloo 2',system-ui,-apple-system,sans-serif;
+  --hand:'Caveat',cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--cream);background:var(--navy);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.defs{position:absolute;width:0;height:0;overflow:hidden}
+
+/* ---------- starry sky ---------- */
+.sky{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(ellipse at 50% 0%,var(--navy-2) 0%,var(--navy) 55%,var(--navy-deep) 100%)}
+.bokeh{position:absolute;border-radius:50%;filter:blur(1.5px);opacity:.8;animation:drift var(--d,18s) ease-in-out var(--delay,0s) infinite alternate}
+.star{position:absolute;border-radius:50%;background:#fff;box-shadow:0 0 6px 1px rgba(255,255,255,.55);animation:twinkle var(--d,3s) ease-in-out var(--delay,0s) infinite alternate}
+.sparkle{position:absolute;color:var(--gold-glow);line-height:1;text-shadow:0 0 8px var(--gold-glow);animation:twinkle var(--d,4s) ease-in-out var(--delay,0s) infinite alternate}
+@keyframes drift{from{transform:translateY(0) scale(1)}to{transform:translateY(-22px) scale(1.08)}}
+@keyframes twinkle{from{opacity:.15}to{opacity:1}}
+
+.page{max-width:480px;margin:0 auto;padding:0 18px 48px}
+
+/* ---------- hero / invitation ---------- */
+.hero{text-align:center}
+.lights{display:block;width:calc(100% + 36px);margin:0 -18px 4px;height:auto;overflow:visible}
+.lights .wire{fill:none;stroke:#44557d;stroke-width:1.4}
+.lights .bulb{fill:var(--gold-glow);filter:url(#glow);animation:twinkle 2.6s ease-in-out infinite alternate}
+
+.envelope{position:relative;width:min(340px,88vw);margin:10px auto 0;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5))}
+.env-top{position:absolute;left:0;right:0;bottom:228px;height:125px;background:linear-gradient(180deg,#6f7855,#5a634a);clip-path:polygon(0 100%,100% 100%,50% 0);z-index:0}
+.env-back{position:absolute;left:0;right:0;bottom:0;height:230px;background:linear-gradient(180deg,#5f6747,#6b7450);border-radius:0 0 6px 6px;z-index:0}
+.env-side{position:absolute;left:0;right:0;bottom:0;height:230px;z-index:1}
+.env-side::before,.env-side::after{content:"";position:absolute;top:0;bottom:0;width:100%}
+.env-side::before{left:0;background:linear-gradient(100deg,var(--sage-light),var(--sage) 70%);clip-path:polygon(0 0,52% 50%,0 100%)}
+.env-side::after{right:0;background:linear-gradient(260deg,var(--sage-light),var(--sage) 70%);clip-path:polygon(100% 0,48% 50%,100% 100%)}
+.card-slot{position:relative;z-index:2;overflow:hidden;padding-top:14px}
+.env-bottom{position:absolute;left:0;right:0;bottom:0;height:230px;background:linear-gradient(180deg,#bcc3a2,var(--sage) 60%,#8f976f);clip-path:polygon(0 100%,50% 36%,100% 100%);z-index:3;border-radius:0 0 6px 6px}
+
+.card{position:relative;width:84%;margin:0 auto;background:var(--cream);color:var(--ink);border-radius:4px;padding:30px 14px 170px;box-shadow:0 10px 24px rgba(0,0,0,.28);animation:slideup 1.5s cubic-bezier(.2,.8,.2,1) .35s both}
+@keyframes slideup{from{transform:translateY(150px)}to{transform:translateY(0)}}
+.flowers{position:absolute;top:-8px;width:118px;height:90px;pointer-events:none}
+.flowers.l{left:-10px}.flowers.r{right:-10px;transform:scaleX(-1)}
+.gob{font-family:var(--script);font-weight:400;font-size:clamp(44px,13vw,54px);line-height:1;margin:36px 0 8px}
+.gob .girl{color:var(--pink)}.gob .or{color:var(--gold-deep);font-size:.6em}.gob .boy{color:var(--blue)}
+.tag{font-weight:700;font-size:11px;letter-spacing:2.2px;text-transform:uppercase;margin:0 0 16px;color:#333}
+.hosts{font-family:var(--script);font-size:clamp(34px,11vw,42px);color:var(--mauve);line-height:1.05;margin:0}
+.welcome{font-family:var(--script);font-size:clamp(24px,7vw,30px);color:var(--mauve);margin:2px 0 4px}
+.stork{display:block;width:124px;height:auto;margin:0 auto 6px}
+.when{font-family:var(--round);font-weight:800;font-size:15px;letter-spacing:1.2px;text-transform:uppercase;line-height:1.35;margin:0;color:var(--ink)}
+.where{font-family:var(--round);font-weight:800;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;line-height:1.3;margin:7px 0 0;color:#444}
+.addr{font-size:9.5px;letter-spacing:.3px;color:var(--muted);margin:5px 0 0}
+
+/* cloud buttons */
+.clouds{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:-44px -8px 0;position:relative;z-index:4}
+.cloud{position:relative;display:block;width:48%;max-width:196px;text-decoration:none;--rot:0deg;transform:rotate(var(--rot));transition:transform .2s}
+.cloud.l{--rot:-3deg}.cloud.r{--rot:3deg}
+.cloud:hover,.cloud:focus-visible{transform:rotate(var(--rot)) translateY(-3px) scale(1.03)}
+.cloud svg{display:block;width:100%;height:auto;filter:drop-shadow(0 8px 14px rgba(0,0,0,.38))}
+.cloud span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:26px 20px 6px;text-align:center;font-family:var(--round);font-weight:800;font-size:clamp(13px,3.9vw,16px);letter-spacing:.6px;color:var(--maroon);line-height:1.1}
+
+.ornament{display:block;width:130px;height:auto;margin:40px auto 10px}
+.countdown{display:flex;justify-content:center;align-items:flex-start;gap:6px}
+.unit{min-width:58px}
+.unit b{display:block;font-family:var(--round);font-weight:800;font-size:clamp(30px,9vw,38px);line-height:1;color:#fff;text-shadow:0 0 12px rgba(255,233,168,.55)}
+.unit small{display:block;margin-top:6px;font-size:9px;font-weight:700;letter-spacing:2px;color:#f1a7c0}
+.colon{font-family:var(--round);font-weight:800;font-size:clamp(28px,8vw,34px);line-height:1;color:#fff;padding-top:2px}
+.cd-done{font-family:var(--script);font-size:36px;color:var(--gold-glow);text-shadow:0 0 14px rgba(255,233,168,.6);margin:0}
+.cal{margin:18px 0 0;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;color:var(--gold)}
+.cal a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(243,217,164,.5);padding-bottom:1px}
+.cal a:hover{color:#fff;border-color:#fff}
+
+/* ---------- programme ---------- */
+.programme{margin-top:72px}
+.banner{margin:0 -18px;padding:24px 18px 20px;background:linear-gradient(180deg,rgba(6,14,32,0),rgba(6,14,32,.88) 16%,rgba(6,14,32,.88) 84%,rgba(6,14,32,0));text-align:center}
+.banner h2{font-family:var(--script);font-weight:400;font-size:clamp(44px,13vw,60px);margin:0;color:#fff7dd;text-shadow:0 0 6px #fff1c2,0 0 16px #f5c76a,0 0 34px rgba(245,199,106,.65)}
+.timeline{position:relative;list-style:none;margin:34px 0 0;padding:6px 0}
+.timeline::before{content:"";position:absolute;top:0;bottom:0;left:calc(50% - 1px);width:2px;background:linear-gradient(180deg,rgba(243,217,164,0),rgba(243,217,164,.8) 8%,rgba(243,217,164,.8) 92%,rgba(243,217,164,0))}
+.row{display:grid;grid-template-columns:1fr 46px 1fr;align-items:center;min-height:112px;opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.row.in{opacity:1;transform:none}
+.row .icon{justify-self:center;width:100%;max-width:150px;padding:0 4px;line-height:0}
+.row .icon img{width:100%;height:auto;display:block;filter:drop-shadow(0 0 10px rgba(255,220,150,.45))}
+.row .tick{height:2px;background:rgba(243,217,164,.8);margin-left:1px}
+.row .what{padding-left:8px}
+.row .what h3{margin:0;font-family:var(--hand);font-weight:700;font-size:clamp(14px,4vw,17px);letter-spacing:2.6px;text-transform:uppercase;color:#fbe8b8;line-height:1.25;text-shadow:0 0 8px rgba(255,226,160,.55),0 0 18px rgba(255,200,110,.35)}
+.row .what p{margin:2px 0 0;font-family:var(--hand);font-weight:700;font-size:clamp(13px,3.5vw,15px);letter-spacing:1.5px;color:var(--gold);text-shadow:0 0 8px rgba(255,226,160,.4)}
+.row.long .what h3{font-size:clamp(13px,3.6vw,15px);letter-spacing:2px}
+.wrap-note{text-align:center;margin:22px 0 0;font-family:var(--hand);font-weight:700;font-size:11.5px;letter-spacing:1.3px;text-transform:uppercase;color:rgba(243,217,164,.75)}
+.wrap-note .t{font-size:clamp(13px,3.5vw,15px);letter-spacing:1.5px;color:var(--gold);text-shadow:0 0 8px rgba(255,226,160,.4)}
+
+/* ---------- rsvp ---------- */
+.rsvp{margin-top:72px;text-align:center}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.rsvp h2{font-family:var(--script);font-weight:400;font-size:clamp(40px,12vw,52px);margin:0;color:#fff7dd;text-shadow:0 0 14px rgba(245,199,106,.45)}
+.deadline{margin:8px 0 22px;font-size:13px;color:rgba(251,247,239,.85);line-height:1.5}
+.form-card{position:relative;background:var(--cream);color:var(--ink);border-radius:16px;padding:36px 20px 26px;text-align:left;box-shadow:0 18px 40px rgba(0,0,0,.4);overflow:hidden}
+.form-card .flowers{top:-12px;width:110px;height:84px}
+.form-card .flowers.l{left:-12px}.form-card .flowers.r{right:-12px}
+.field{margin:0 0 16px;position:relative;z-index:1}
+.field label,fieldset legend{display:block;font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#555;margin:0 0 7px;padding:0}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:15px;color:var(--ink);background:#fff;border:1.5px solid #e2dccf;border-radius:10px;padding:11px 12px;outline:none;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none;appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23888' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:34px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--pink);box-shadow:0 0 0 3px rgba(232,143,167,.25)}
+.field textarea{min-height:84px;resize:vertical}
+fieldset{border:0;margin:0 0 16px;padding:0;min-width:0;position:relative;z-index:1}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{flex:1 1 calc(50% - 4px);cursor:pointer;position:relative}
+.pill input{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px}
+.pill span{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:9px 10px;border-radius:12px;border:1.5px solid #e2dccf;background:#fff;font-weight:600;font-size:14px;text-align:center;transition:all .15s}
+.pill input:focus-visible+span{box-shadow:0 0 0 3px rgba(232,143,167,.35)}
+.pill input:checked+span{border-color:var(--mauve);background:#fbeaf0;color:var(--maroon);box-shadow:0 4px 12px rgba(139,30,63,.12)}
+.pill.pinkteam input:checked+span{border-color:var(--pink);background:#fde3ea;color:#b3375b}
+.pill.blueteam input:checked+span{border-color:var(--blue);background:#e3eef9;color:#2f6aa3}
+.extra{display:none}.extra.show{display:block}
+.submit{display:block;width:100%;margin-top:6px;font-family:var(--round);font-weight:800;font-size:17px;letter-spacing:1px;text-transform:uppercase;color:#fff;background:linear-gradient(90deg,var(--maroon),#c2456c);border:0;border-radius:14px;padding:15px;cursor:pointer;box-shadow:0 10px 24px rgba(139,30,63,.35);transition:transform .15s,opacity .15s}
+.submit:hover{transform:translateY(-2px)}
+.submit:disabled{opacity:.65;cursor:default;transform:none}
+.notice{display:none;margin:14px 0 0;padding:12px 14px;border-radius:10px;font-size:13px;line-height:1.5;background:#fdeaea;color:#9b2222;border:1px solid #f3c2c2}
+.notice.show{display:block}
+.thanks{display:none;text-align:center;padding:26px 6px 10px;position:relative;z-index:1}
+.thanks.show{display:block}
+.thanks .emoji{font-size:46px;margin:0 0 6px}
+.thanks .big{font-family:var(--script);font-weight:400;font-size:46px;color:var(--mauve);margin:0 0 8px;line-height:1.1}
+.thanks .msg{margin:0;font-size:15px;line-height:1.6;color:#444}
+
+footer{margin-top:64px;text-align:center}
+footer .sig{font-family:var(--script);font-size:38px;color:#fff7dd;text-shadow:0 0 14px rgba(245,199,106,.45);margin:0}
+footer .tiny{margin:14px 0 0;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(243,217,164,.6)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .row{opacity:1;transform:none}
+}
+@media (max-width:360px){
+  .card{padding-left:10px;padding-right:10px}
+  .unit{min-width:52px}
+}
+</style>
+</head>
+<body>
+<div class="sky" id="sky" aria-hidden="true"></div>
+
+<!-- Reusable shapes: watercolor bouquet + cloud -->
+<svg class="defs" aria-hidden="true">
+  <defs>
+    <radialGradient id="gp"><stop offset="0" stop-color="#fbd3de"/><stop offset=".55" stop-color="#ee9db6"/><stop offset="1" stop-color="#ee9db6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gb"><stop offset="0" stop-color="#d9e8f7"/><stop offset=".55" stop-color="#9ec4e8"/><stop offset="1" stop-color="#9ec4e8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gy"><stop offset="0" stop-color="#fff2b3"/><stop offset="1" stop-color="#e9c66a"/></radialGradient>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <symbol id="bouquet" viewBox="0 0 120 92">
+      <path d="M18 74 C 26 50, 46 44, 62 50 C 50 62, 36 74, 18 74 Z" fill="#9fbf8a" opacity=".85"/>
+      <path d="M40 84 C 44 66, 60 58, 78 62 C 68 74, 56 84, 40 84 Z" fill="#8fb37c" opacity=".8"/>
+      <path d="M70 26 C 82 14, 98 14, 110 24 C 98 32, 84 34, 70 26 Z" fill="#a9c694" opacity=".8"/>
+      <g transform="translate(34 34)"><circle r="11" cy="-10" fill="url(#gp)"/><circle r="11" cx="10" cy="-3" fill="url(#gp)"/><circle r="11" cx="6" cy="9" fill="url(#gp)"/><circle r="11" cx="-6" cy="9" fill="url(#gp)"/><circle r="11" cx="-10" cy="-3" fill="url(#gp)"/><circle r="4.2" fill="url(#gy)"/></g>
+      <g transform="translate(72 46)"><circle r="12" cy="-11" fill="url(#gb)"/><circle r="12" cx="11" cy="-3" fill="url(#gb)"/><circle r="12" cx="7" cy="10" fill="url(#gb)"/><circle r="12" cx="-7" cy="10" fill="url(#gb)"/><circle r="12" cx="-11" cy="-3" fill="url(#gb)"/><circle r="4.4" fill="url(#gy)"/></g>
+      <g transform="translate(100 24)"><circle r="8" cy="-7" fill="url(#gp)"/><circle r="8" cx="7" cy="-2" fill="url(#gp)"/><circle r="8" cx="4" cy="7" fill="url(#gp)"/><circle r="8" cx="-4" cy="7" fill="url(#gp)"/><circle r="8" cx="-7" cy="-2" fill="url(#gp)"/><circle r="3" fill="url(#gy)"/></g>
+      <g transform="translate(14 34)"><circle r="7" cy="-6" fill="url(#gb)"/><circle r="7" cx="6" cy="-2" fill="url(#gb)"/><circle r="7" cx="4" cy="6" fill="url(#gb)"/><circle r="7" cx="-4" cy="6" fill="url(#gb)"/><circle r="7" cx="-6" cy="-2" fill="url(#gb)"/><circle r="2.6" fill="url(#gy)"/></g>
+      <circle cx="56" cy="20" r="2.4" fill="#ee9db6" opacity=".7"/><circle cx="88" cy="64" r="2" fill="#9ec4e8" opacity=".7"/><circle cx="24" cy="58" r="1.8" fill="#ee9db6" opacity=".6"/>
+    </symbol>
+    <symbol id="cloudshape" viewBox="0 0 200 112">
+      <g fill="#a9c9ea"><circle cx="46" cy="72" r="31"/><circle cx="82" cy="50" r="37"/><circle cx="124" cy="46" r="39"/><circle cx="160" cy="70" r="30"/><rect x="30" y="62" width="146" height="42" rx="21"/></g>
+      <g fill="#fff"><circle cx="46" cy="72" r="28"/><circle cx="82" cy="50" r="34"/><circle cx="124" cy="46" r="36"/><circle cx="160" cy="70" r="27"/><rect x="33" y="65" width="140" height="36" rx="18"/></g>
+    </symbol>
+  </defs>
+</svg>
+
+<main class="page">
+
+  <!-- ================= INVITATION ================= -->
+  <header class="hero" id="top">
+    <svg class="lights" viewBox="0 0 420 74" aria-hidden="true">
+      <path id="wire1" class="wire" d="M-10 6 C 70 58, 150 60, 215 28 S 360 -8, 430 38"/>
+      <path id="wire2" class="wire" d="M-10 28 C 60 68, 140 70, 215 42 S 350 8, 430 54"/>
+      <g id="bulbs"></g>
+    </svg>
+
+    <div class="envelope">
+      <div class="env-top"></div>
+      <div class="env-back"></div>
+      <div class="env-side"></div>
+      <div class="card-slot">
+        <article class="card">
+          <svg class="flowers l" viewBox="0 0 120 92" aria-hidden="true"><use href="#bouquet"/></svg>
+          <svg class="flowers r" viewBox="0 0 120 92" aria-hidden="true"><use href="#bouquet"/></svg>
+          <h1 class="gob"><span class="girl">Girl</span> <span class="or">or</span> <span class="boy">Boy</span></h1>
+          <p class="tag">We'll find out with you!</p>
+          <p class="hosts" data-cfg="HOSTS">Sailesh &amp; Nithya</p>
+          <p class="welcome">welcome you</p>
+          <svg class="stork" viewBox="0 0 172 100" aria-hidden="true">
+            <path d="M60 60 L36 80 M66 62 L46 84" stroke="#e8862e" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <path d="M50 52 L26 60 L46 42 Z" fill="#3a3a3a"/>
+            <ellipse cx="78" cy="50" rx="30" ry="13" fill="#fff" stroke="#9a9a9a" stroke-width="1.4"/>
+            <path d="M62 46 C 66 14, 100 8, 118 14 C 104 28, 90 40, 76 48 Z" fill="#f7f7f7" stroke="#9a9a9a" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M104 16 L122 9 L116 20 Z" fill="#3a3a3a"/>
+            <path d="M104 46 C 118 44, 126 36, 130 26" fill="none" stroke="#9a9a9a" stroke-width="9.5" stroke-linecap="round"/>
+            <path d="M104 46 C 118 44, 126 36, 130 26" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="131" cy="23" r="7.5" fill="#fff" stroke="#9a9a9a" stroke-width="1.4"/>
+            <circle cx="133.5" cy="21.5" r="1.4" fill="#222"/>
+            <path d="M137 22 L160 29 L137 27 Z" fill="#e8862e"/>
+            <path d="M158 29 L152 46" stroke="#9a9a9a" stroke-width="1.2" fill="none"/>
+            <path d="M152 46 C 136 50, 134 72, 152 78 Z" fill="#e88fa7"/>
+            <path d="M152 46 C 168 50, 170 72, 152 78 Z" fill="#7fb3e0"/>
+            <circle cx="152" cy="46" r="3" fill="#fff" stroke="#9a9a9a" stroke-width="1"/>
+          </svg>
+          <p class="when"><span data-cfg="DATE_LINE">November 21st</span><br><span data-cfg="TIME_LINE">5:30 – 10:00 PM</span></p>
+          <p class="where"><span data-cfg="VENUE_NAME">Tesoro Clubhouse</span><br><span data-cfg="VENUE_SUB">Crescent Village</span></p>
+          <p class="addr" data-cfg="ADDRESS">Crescent Village Cir, San Jose, CA 95134</p>
+        </article>
+      </div>
+      <div class="env-bottom"></div>
+    </div>
+
+    <nav class="clouds" aria-label="Quick links">
+      <a class="cloud l" data-href="MAPS_URL" href="https://share.google/jmfDZYN7qiA1pqeiV" target="_blank" rel="noopener">
+        <svg viewBox="0 0 200 112" aria-hidden="true"><use href="#cloudshape"/></svg><span>View Location</span>
+      </a>
+      <a class="cloud r" href="#rsvp">
+        <svg viewBox="0 0 200 112" aria-hidden="true"><use href="#cloudshape"/></svg><span>RSVP Here!</span>
+      </a>
+    </nav>
+
+    <svg class="ornament" viewBox="0 0 130 28" aria-hidden="true">
+      <path d="M6 15 C 26 2, 48 2, 60 13" fill="none" stroke="#cfd6e6" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M124 15 C 104 2, 82 2, 70 13" fill="none" stroke="#cfd6e6" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M65 20 l-5.2 -5.2 a3.6 3.6 0 0 1 5.2 -5.2 a3.6 3.6 0 0 1 5.2 5.2 z" fill="#cfd6e6"/>
+      <circle cx="6" cy="15" r="1.7" fill="#cfd6e6"/><circle cx="124" cy="15" r="1.7" fill="#cfd6e6"/>
+      <path d="M22 20 q 6 -6 12 0" fill="none" stroke="#cfd6e6" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M96 20 q 6 -6 12 0" fill="none" stroke="#cfd6e6" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="unit"><b id="cd-days">00</b><small>Days</small></div><div class="colon">:</div>
+      <div class="unit"><b id="cd-hours">00</b><small>Hours</small></div><div class="colon">:</div>
+      <div class="unit"><b id="cd-mins">00</b><small>Minutes</small></div><div class="colon">:</div>
+      <div class="unit"><b id="cd-secs">00</b><small>Seconds</small></div>
+    </div>
+    <p class="cal">Add to calendar: <a id="gcal" href="#" target="_blank" rel="noopener">Google</a> &nbsp;·&nbsp; <a href="event.ics" download="gender-reveal.ics">Apple / Outlook</a></p>
+  </header>
+
+  <!-- ================= EVENT PROGRAMME ================= -->
+  <section class="programme" id="programme" aria-labelledby="prog-title">
+    <div class="banner"><h2 id="prog-title">Event Programme</h2></div>
+    <ol class="timeline">
+      <li class="row"><div class="icon"><img src="img/icon-arrival.png" alt=""></div><div class="tick"></div><div class="what"><h3>Guests Arrival</h3><p>5:30 PM</p></div></li>
+      <li class="row"><div class="icon"><img src="img/icon-games.png" alt=""></div><div class="tick"></div><div class="what"><h3>Games</h3><p>6:00 PM</p></div></li>
+      <li class="row"><div class="icon"><img src="img/icon-reveal.png" alt=""></div><div class="tick"></div><div class="what"><h3>The Reveal</h3><p>7:00 PM</p></div></li>
+      <li class="row"><div class="icon"><img src="img/icon-dinner.png" alt=""></div><div class="tick"></div><div class="what"><h3>Dinner</h3><p>8:00 PM</p></div></li>
+      <li class="row long"><div class="icon"><img src="img/icon-dance.png" alt=""></div><div class="tick"></div><div class="what"><h3>All Good Things End With Dance</h3><p>9:00 PM</p></div></li>
+    </ol>
+    <p class="wrap-note">✨ Party wraps up at <span class="t">10:00 PM</span> ✨</p>
+  </section>
+
+  <!-- ================= RSVP ================= -->
+  <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+    <p class="eyebrow">RSVP</p>
+    <h2 id="rsvp-title">Will you be there?</h2>
+    <p class="deadline">We can't wait to find out with you.<br>Please respond by <strong data-cfg="RSVP_DEADLINE">November 1, 2026</strong>.</p>
+
+    <div class="form-card">
+      <svg class="flowers l" viewBox="0 0 120 92" aria-hidden="true"><use href="#bouquet"/></svg>
+      <svg class="flowers r" viewBox="0 0 120 92" aria-hidden="true"><use href="#bouquet"/></svg>
+
+      <form id="rsvpForm">
+        <div class="field">
+          <label for="name">Your name *</label>
+          <input id="name" name="name" type="text" autocomplete="name" required placeholder="First &amp; last name">
+        </div>
+        <div class="field">
+          <label for="email">Email (optional)</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="So we can send you updates">
+        </div>
+
+        <fieldset>
+          <legend>Will you attend? *</legend>
+          <div class="pills">
+            <label class="pill"><input type="radio" name="attending" value="Yes" required><span>🎉 Joyfully Accepts</span></label>
+            <label class="pill"><input type="radio" name="attending" value="No"><span>💌 Regretfully Declines</span></label>
+          </div>
+        </fieldset>
+
+        <div class="extra" id="extra">
+          <div class="field">
+            <label for="guests">Number of guests (including you) *</label>
+            <select id="guests" name="guests" required>
+              <option value="">Select…</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Your guess: Team Pink or Team Blue? *</legend>
+            <div class="pills">
+              <label class="pill pinkteam"><input type="radio" name="guess" value="Team Pink" required><span>💗 Team Pink</span></label>
+              <label class="pill blueteam"><input type="radio" name="guess" value="Team Blue"><span>💙 Team Blue</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Diet preference *</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="diet" value="Veg" required><span>🌱 Veg</span></label>
+              <label class="pill"><input type="radio" name="diet" value="Non-Veg"><span>🍗 Non-Veg</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="allergies">Allergies (optional)</label>
+            <input id="allergies" name="allergies" type="text" placeholder="Anything we should know?">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="note">A note for Sailesh &amp; Nithya (optional)</label>
+          <textarea id="note" name="note" placeholder="Wishes, excitement, or a name suggestion!"></textarea>
+        </div>
+
+        <button class="submit" type="submit" id="submitBtn">Send RSVP</button>
+        <div class="notice" id="notice" role="alert"></div>
+      </form>
+
+      <div class="thanks" id="thanks">
+        <div class="emoji">🎉</div>
+        <h3 class="big">Thank you!</h3>
+        <p class="msg"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="sig">With love,<br><span data-cfg="HOSTS">Sailesh &amp; Nithya</span></p>
+    <p class="tiny">Made with ❤️ for our little one</p>
+  </footer>
+</main>
+
+<script>
+/* =====================================================================
+   EDIT HERE — everything you might want to change lives in this block.
+   ===================================================================== */
+const CONFIG = {
+  HOSTS: "Sailesh & Nithya",
+  EVENT_START_ISO: "2026-11-21T17:30:00-08:00",   // Sat Nov 21, 2026, 5:30 PM PST
+  EVENT_END_ISO:   "2026-11-21T22:00:00-08:00",   // 10:00 PM PST
+  DATE_LINE: "November 21st",
+  TIME_LINE: "5:30 – 10:00 PM",
+  EVENT_LABEL: "Saturday, November 21 at 5:30 PM",
+  VENUE_NAME: "Tesoro Clubhouse",
+  VENUE_SUB: "Crescent Village",
+  ADDRESS: "Crescent Village Cir, San Jose, CA 95134",
+  MAPS_URL: "https://share.google/jmfDZYN7qiA1pqeiV",
+  RSVP_DEADLINE: "November 1, 2026",
+  // Paste the Google Apps Script "Web app" URL (ends in /exec) here:
+  SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzQsAqP-P5uJjHyqsbEqpyjXqYKXEsCN4VcVMIdkAeI03ElfRmPmYZBqYN2FdpY4u_e/exec"
+};
+/* ===================================================================== */
+
+const $  = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const rnd = (a, b) => a + Math.random() * (b - a);
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---- push CONFIG text into the page ---- */
+$$('[data-cfg]').forEach(el => { const v = CONFIG[el.dataset.cfg]; if (v != null) el.textContent = v; });
+$$('[data-href]').forEach(a => { const v = CONFIG[a.dataset.href]; if (v) a.href = v; });
+
+/* ---- starry sky: bokeh + stars + sparkles ---- */
+(function sky() {
+  const sky = $('#sky'), frag = document.createDocumentFragment();
+  const small = matchMedia('(max-width: 600px)').matches;
+  const tints = ['255,214,150', '255,190,170', '190,210,255', '255,230,190'];
+  const nB = small ? 11 : 18, nS = small ? 60 : 100, nSp = small ? 9 : 14;
+  for (let i = 0; i < nB; i++) {
+    const d = document.createElement('div'); d.className = 'bokeh';
+    const s = rnd(26, 130), t = tints[i % tints.length];
+    d.style.cssText = `width:${s}px;height:${s}px;left:${rnd(-6, 100)}%;top:${rnd(-6, 100)}%;` +
+      `background:radial-gradient(circle,rgba(${t},.55) 0%,rgba(${t},.18) 45%,rgba(${t},0) 70%);--d:${rnd(14, 26)}s;--delay:-${rnd(0, 20)}s`;
+    frag.appendChild(d);
+  }
+  for (let i = 0; i < nS; i++) {
+    const s = document.createElement('span'); s.className = 'star';
+    const sz = rnd(1.2, 3);
+    s.style.cssText = `width:${sz}px;height:${sz}px;left:${rnd(0, 100)}%;top:${rnd(0, 100)}%;--d:${rnd(2, 5)}s;--delay:-${rnd(0, 5)}s`;
+    frag.appendChild(s);
+  }
+  for (let i = 0; i < nSp; i++) {
+    const s = document.createElement('span'); s.className = 'sparkle'; s.textContent = '✦';
+    s.style.cssText = `left:${rnd(0, 100)}%;top:${rnd(0, 100)}%;font-size:${rnd(9, 18)}px;--d:${rnd(3, 6)}s;--delay:-${rnd(0, 6)}s`;
+    frag.appendChild(s);
+  }
+  sky.appendChild(frag);
+})();
+
+/* ---- string lights: bulbs placed along the two wires ---- */
+(function lights() {
+  const NS = 'http://www.w3.org/2000/svg', g = $('#bulbs');
+  ['wire1', 'wire2'].forEach((id, wi) => {
+    const p = document.getElementById(id), L = p.getTotalLength(), n = wi ? 12 : 14;
+    for (let i = 1; i < n; i++) {
+      const pt = p.getPointAtLength(L * i / n);
+      const stem = document.createElementNS(NS, 'line');
+      stem.setAttribute('x1', pt.x); stem.setAttribute('y1', pt.y); stem.setAttribute('x2', pt.x); stem.setAttribute('y2', pt.y + 4);
+      stem.setAttribute('class', 'wire'); g.appendChild(stem);
+      const c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', pt.x); c.setAttribute('cy', pt.y + 7); c.setAttribute('r', wi ? 3 : 3.6); c.setAttribute('class', 'bulb');
+      c.style.animationDelay = (-rnd(0, 3)).toFixed(2) + 's'; c.style.animationDuration = rnd(2, 3.6).toFixed(2) + 's';
+      g.appendChild(c);
+    }
+  });
+})();
+
+/* ---- countdown ---- */
+(function countdown() {
+  const target = new Date(CONFIG.EVENT_START_ISO).getTime();
+  const box = $('#countdown');
+  const el = { d: $('#cd-days'), h: $('#cd-hours'), m: $('#cd-mins'), s: $('#cd-secs') };
+  const pad = n => String(n).padStart(2, '0');
+  let timer;
+  function tick() {
+    const diff = Math.max(0, target - Date.now());
+    if (diff === 0) { box.innerHTML = '<p class="cd-done">It\'s reveal day! 🎉</p>'; clearInterval(timer); return; }
+    el.d.textContent = pad(Math.floor(diff / 864e5));
+    el.h.textContent = pad(Math.floor(diff % 864e5 / 36e5));
+    el.m.textContent = pad(Math.floor(diff % 36e5 / 6e4));
+    el.s.textContent = pad(Math.floor(diff % 6e4 / 1e3));
+  }
+  tick(); timer = setInterval(tick, 1000);
+})();
+
+/* ---- Google Calendar link (the Apple/Outlook link points at event.ics) ---- */
+(function calendar() {
+  const fmt = d => new Date(d).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const title = `${CONFIG.HOSTS}'s Gender Reveal 🎀`;
+  const loc = `${CONFIG.VENUE_NAME}, ${CONFIG.VENUE_SUB}, ${CONFIG.ADDRESS}`;
+  const details = `Girl or Boy? We'll find out with you! Details & RSVP: ${location.href.split('#')[0]}`;
+  $('#gcal').href = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
+    '&text=' + encodeURIComponent(title) +
+    '&dates=' + fmt(CONFIG.EVENT_START_ISO) + '/' + fmt(CONFIG.EVENT_END_ISO) +
+    '&details=' + encodeURIComponent(details) +
+    '&location=' + encodeURIComponent(loc);
+})();
+
+/* ---- programme rows fade in on scroll ---- */
+(function revealRows() {
+  const rows = $$('.row');
+  if (reduceMotion || !('IntersectionObserver' in window)) { rows.forEach(r => r.classList.add('in')); return; }
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.2 });
+  rows.forEach(r => io.observe(r));
+  // Safety net: some in-app browsers throttle observers; never leave the programme invisible.
+  setTimeout(() => rows.forEach(r => r.classList.add('in')), 4000);
+})();
+
+/* ---- RSVP form ---- */
+(function rsvp() {
+  const form = $('#rsvpForm'), extra = $('#extra'), notice = $('#notice'), btn = $('#submitBtn'), thanks = $('#thanks');
+  const extraInputs = $$('input, select', extra);
+
+  function setExtra(show) {
+    extra.classList.toggle('show', show);
+    extraInputs.forEach(i => { i.disabled = !show; });   // disabled fields are skipped by validation and not submitted
+  }
+  setExtra(false);
+  $$('input[name="attending"]', form).forEach(r => r.addEventListener('change', () => setExtra(form.elements.attending.value === 'Yes')));
+
+  function showErr(msg) { notice.textContent = msg; notice.classList.add('show'); }
+
+  function showThanks(d) {
+    const first = (d.name || '').trim().split(/\s+/)[0] || 'friend';
+    const yes = d.attending === 'Yes';
+    $('.emoji', thanks).textContent = yes ? (d.guess === 'Team Pink' ? '💗' : '💙') : '💌';
+    $('.big', thanks).textContent = yes ? `Thank you, ${first}!` : `We'll miss you, ${first}!`;
+    const msg = $('.msg', thanks); msg.textContent = '';
+    if (yes) {
+      msg.append("You're on the list");
+      if (d.guess) { msg.append(' for '); const b = document.createElement('strong'); b.textContent = d.guess; msg.append(b); }
+      msg.append('. See you on '); const w = document.createElement('strong'); w.textContent = CONFIG.EVENT_LABEL; msg.append(w); msg.append('!');
+    } else {
+      msg.append("Thank you for letting us know. We'll share the big news with you after the reveal!");
+    }
+    form.style.display = 'none';
+    thanks.classList.add('show');
+    thanks.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+  }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    if (btn.disabled) return;
+    notice.classList.remove('show');
+    if (!form.reportValidity()) return;
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    data.timestamp = new Date().toISOString();
+    data.userAgent = navigator.userAgent;
+
+    if (!CONFIG.SCRIPT_URL) {
+      showErr('The RSVP form is not connected yet. Please message Sailesh or Nithya directly for now.');
+      console.warn('CONFIG.SCRIPT_URL is empty — paste your Apps Script /exec URL into index.html.');
+      return;
+    }
+
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try { const saved = JSON.parse(localStorage.getItem('gr_rsvps') || '[]'); saved.push(data); localStorage.setItem('gr_rsvps', JSON.stringify(saved)); } catch (_) {}
+
+    try {
+      // no-cors: Apps Script accepts the POST (text/plain avoids a preflight) and the browser gets an opaque response.
+      await fetch(CONFIG.SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) });
+      showThanks(data);
+    } catch (err) {
+      console.warn('RSVP send failed', err);
+      btn.disabled = false; btn.textContent = 'Send RSVP';
+      showErr('Something went wrong sending your RSVP. Please check your connection and try again, or message us directly.');
+    }
+  });
+})();
+</script>
+</body>
+</html>
