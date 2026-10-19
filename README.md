@@ -6,7 +6,7 @@ Hosted on GitHub Pages; RSVPs land in a Google Sheet.
 **Live site:** https://saileshandroid.github.io/gender-reveal/  
 **RSVP sheet:** https://docs.google.com/spreadsheets/d/1xDJTgoDqMloHrFmUhlk7Q2gxFuUiKLlufG7Wf9-fEQY/edit
 
-**Party:** Saturday, November 21, 2026 · 5:30 – 10:00 PM PST · Tesoro Clubhouse, Crescent Village, San Jose
+**Party:** Saturday, November 21, 2026 · 5:30 – 9:30 PM PST · Tesoro Clubhouse, Crescent Village, San Jose
 
 ## Files
 
