@@ -13,7 +13,7 @@ Hosted on GitHub Pages; RSVPs land in a Google Sheet.
 | File | What it is |
 |---|---|
 | `index.html` | The whole site (HTML + CSS + JS in one file) |
-| `preview.jpg` | Thumbnail shown when the link is shared on WhatsApp / iMessage |
+| `preview-2.jpg` | Thumbnail shown when the link is shared on WhatsApp / iMessage (a capture of the live card; regenerate if the card changes) |
 | `img/icon-*.png` | Watercolor programme icons (cropped from the original design) |
 | `event.ics` | "Add to Apple / Outlook calendar" file |
 | `apps-script/Code.gs` | Backend that writes RSVPs into the Google Sheet (copy of what is deployed) |
