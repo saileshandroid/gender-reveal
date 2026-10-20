@@ -29,6 +29,8 @@ Open `index.html` and edit the `CONFIG` block near the bottom (search for `EDIT 
 - `SCRIPT_URL` is the Apps Script web-app URL (ends in `/exec`).
 
 Programme rows are plain HTML in the `<ol class="timeline">` list.
+
+An unused white/light theme exists for comparison: open the page with `?theme=light`. To make it the default, add `class="light"` to the `<body>` tag.
 If you change the date, also update `DTSTART` / `DTEND` in `event.ics` (UTC: PST + 8 hours).
 
 Then commit and push; GitHub Pages redeploys in about a minute:

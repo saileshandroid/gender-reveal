@@ -165,6 +165,39 @@ footer{margin-top:64px;text-align:center}
 footer .sig{font-family:var(--script);font-size:38px;color:#fff7dd;text-shadow:0 0 14px rgba(245,199,106,.45);margin:0}
 footer .tiny{margin:14px 0 0;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(243,217,164,.6)}
 
+/* ---------- light theme (body.light) ---------- */
+body.light{background:#fff;color:#2b2b2b}
+body.light .sky{background:radial-gradient(ellipse at 50% 0%,#ffffff 0%,#fcf7f2 55%,#f7edf0 100%)}
+body.light .bokeh{opacity:.45}
+body.light .star{background:#e3b84a;box-shadow:0 0 6px 1px rgba(227,184,74,.45)}
+body.light .sparkle{color:#dba93a;text-shadow:0 0 8px rgba(219,169,58,.55)}
+body.light .lights .wire{stroke:#cfc6ba}
+body.light .lights .bulb{fill:#f1c352}
+body.light .envelope{filter:drop-shadow(0 18px 30px rgba(60,40,50,.22))}
+body.light .card{box-shadow:0 12px 30px rgba(60,40,50,.16)}
+body.light .cloud svg{filter:drop-shadow(0 8px 14px rgba(60,40,50,.18))}
+body.light .ornament{filter:brightness(.55) saturate(.4)}
+body.light .unit b,body.light .colon{color:var(--maroon);text-shadow:none}
+body.light .unit small{color:var(--mauve)}
+body.light .cal,body.light .cal a{color:var(--mauve);border-color:rgba(160,90,122,.45)}
+body.light .cal a:hover{color:var(--maroon);border-color:var(--maroon)}
+body.light .banner{background:linear-gradient(180deg,rgba(160,90,122,0),rgba(160,90,122,.14) 16%,rgba(160,90,122,.14) 84%,rgba(160,90,122,0))}
+body.light .banner h2{color:var(--maroon);text-shadow:0 0 14px rgba(232,143,167,.45)}
+body.light .timeline::before{background:linear-gradient(180deg,rgba(160,90,122,0),rgba(160,90,122,.55) 8%,rgba(160,90,122,.55) 92%,rgba(160,90,122,0))}
+body.light .row .tick{background:rgba(160,90,122,.55)}
+body.light .row .icon img{filter:drop-shadow(0 6px 12px rgba(60,40,50,.18))}
+body.light .row .what h3{color:var(--maroon);text-shadow:none}
+body.light .row .what p,body.light .wrap-note,body.light .wrap-note .t{color:var(--mauve);text-shadow:none}
+body.light .note .label{color:var(--mauve)}
+body.light .note .sub{color:var(--maroon);text-shadow:none}
+body.light .note p{color:#444}
+body.light .eyebrow{color:var(--mauve)}
+body.light .rsvp h2{color:var(--maroon);text-shadow:none}
+body.light .deadline{color:#4a4a4a}
+body.light .form-card{box-shadow:0 18px 40px rgba(139,30,63,.14);border:1px solid #f3e6ec}
+body.light footer .sig{color:var(--maroon);text-shadow:none}
+body.light footer .tiny{color:var(--mauve)}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
@@ -404,6 +437,9 @@ const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 const rnd = (a, b) => a + Math.random() * (b - a);
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---- optional light theme for previews: add ?theme=light to the URL ---- */
+if (new URLSearchParams(location.search).get('theme') === 'light') document.body.classList.add('light');
 
 /* ---- push CONFIG text into the page ---- */
 $$('[data-cfg]').forEach(el => { const v = CONFIG[el.dataset.cfg]; if (v != null) el.textContent = v; });
