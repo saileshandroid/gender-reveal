@@ -116,6 +116,15 @@ a{color:inherit}
 .wrap-note{text-align:center;margin:22px 0 0;font-family:var(--hand);font-weight:700;font-size:11.5px;letter-spacing:1.3px;text-transform:uppercase;color:rgba(243,217,164,.75)}
 .wrap-note .t{font-size:clamp(13px,3.5vw,15px);letter-spacing:1.5px;color:var(--gold);text-shadow:0 0 8px rgba(255,226,160,.4)}
 
+/* ---------- event notes ---------- */
+.notes{margin-top:72px}
+.note{text-align:center;margin:34px auto 6px;max-width:330px;padding:0 10px;opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.note.in{opacity:1;transform:none}
+.note .label{margin:0;font-weight:700;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#f1a7c0}
+.note .sub{margin:6px 0 10px;font-family:var(--hand);font-weight:700;font-size:clamp(15px,5.6vw,21px);letter-spacing:.1em;white-space:nowrap;text-transform:uppercase;color:#fbe8b8;text-shadow:0 0 8px rgba(255,226,160,.5),0 0 18px rgba(255,200,110,.3)}
+.note p{margin:0;font-size:14px;line-height:1.6;color:rgba(251,247,239,.88)}
+.note+.note::before{content:"\2726";display:block;margin:0 auto 30px;font-size:11px;color:rgba(243,217,164,.55)}
+
 /* ---------- rsvp ---------- */
 .rsvp{margin-top:72px;text-align:center}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
@@ -159,7 +168,7 @@ footer .tiny{margin:14px 0 0;font-size:10.5px;letter-spacing:1.5px;text-transfor
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
-  .row{opacity:1;transform:none}
+  .row,.note{opacity:1;transform:none}
 }
 @media (max-width:360px){
   .card{padding-left:10px;padding-right:10px}
@@ -271,6 +280,16 @@ footer .tiny{margin:14px 0 0;font-size:10.5px;letter-spacing:1.5px;text-transfor
       <li class="row long"><div class="icon"><img src="img/icon-dance.png" alt=""></div><div class="tick"></div><div class="what"><h3>All Good Things End With Dance</h3><p>9:00 PM</p></div></li>
     </ol>
     <p class="wrap-note">✨ Party wraps up at <span class="t">9:30 PM</span> ✨</p>
+  </section>
+
+  <!-- ================= EVENT NOTES ================= -->
+  <section class="notes" id="notes" aria-labelledby="notes-title">
+    <div class="banner"><h2 id="notes-title">Event Notes</h2></div>
+
+    <div class="note">
+      <p class="label">Dress code</p>
+      <p class="sub">Cocktail / Dressy Casual</p>
+    </div>
   </section>
 
   <!-- ================= RSVP ================= -->
@@ -468,7 +487,7 @@ $$('[data-href]').forEach(a => { const v = CONFIG[a.dataset.href]; if (v) a.href
 
 /* ---- programme rows fade in on scroll ---- */
 (function revealRows() {
-  const rows = $$('.row');
+  const rows = $$('.row, .note');
   if (reduceMotion || !('IntersectionObserver' in window)) { rows.forEach(r => r.classList.add('in')); return; }
   const io = new IntersectionObserver(entries => entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
