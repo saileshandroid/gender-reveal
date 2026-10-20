@@ -13,7 +13,7 @@ Hosted on GitHub Pages; RSVPs land in a Google Sheet.
 | File | What it is |
 |---|---|
 | `index.html` | The whole site (HTML + CSS + JS in one file) |
-| `preview-2.jpg` | Thumbnail shown when the link is shared on WhatsApp / iMessage (a capture of the live card; regenerate if the card changes) |
+| `preview-3.jpg` | Thumbnail shown when the link is shared on WhatsApp / iMessage (a capture of the live card; regenerate if the card changes) |
 | `img/icon-*.png` | Watercolor programme icons (cropped from the original design) |
 | `event.ics` | "Add to Apple / Outlook calendar" file |
 | `apps-script/Code.gs` | Backend that writes RSVPs into the Google Sheet (copy of what is deployed) |
@@ -23,7 +23,7 @@ Hosted on GitHub Pages; RSVPs land in a Google Sheet.
 Open `index.html` and edit the `CONFIG` block near the bottom (search for `EDIT HERE`):
 
 - `EVENT_START_ISO` / `EVENT_END_ISO` drive the countdown and the Google Calendar link.
-- `DATE_LINE`, `TIME_LINE`, `VENUE_NAME`, `VENUE_SUB`, `ADDRESS` are the words printed on the card.
+- `WHEN_LINE`, `VENUE_NAME`, `ADDRESS` are the words printed on the card; `CAL_LOCATION` is the full address used by the Add to calendar links.
 - `MAPS_URL` is what the **View Location** cloud opens.
 - `RSVP_DEADLINE` is the "please respond by" date.
 - `SCRIPT_URL` is the Apps Script web-app URL (ends in `/exec`).
